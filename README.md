@@ -113,4 +113,4 @@ details
 
   - [altis](https://github.com/search?q=org%3Ahumanmade+altis) by humanmade, as our digital role model and inspiration
   - [@roborourke](https://github.com/roborourke) for his clear & understandable [coding guidelines](https://docs.altis-dxp.com/guides/code-review/standards/)
-  - ...
+  - [python-project-template](https://github.com/rochacbruno/python-project-template) for their nice template->repo renaming workflow

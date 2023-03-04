@@ -1,11 +1,18 @@
-.DS_Store
-phpcs.xml
-phpunit.xml
-Thumbs.db
-wp-cli.local.yml
-node_modules/
+/build/
+/node_modules
+/vendor
+/phpcs.xml
+/.phpcs.xml
 *.sql
 *.tar.gz
 *.zip
+/wiki
+.vscode
 
-/vendor/
+# Generated via bin/transform-readme.php
+/readme.txt
+/.wp-env.override.json
+
+# misc
+.DS_Store
+Thumbs.db

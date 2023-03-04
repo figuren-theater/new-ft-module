@@ -1,0 +1,18 @@
+{
+  "config": {},
+  "env": {
+    "development": {
+      "plugins": [
+        "."
+      ]
+    },
+    "tests": {
+      "plugins": [
+        "."
+      ],
+      "mappings": {
+        "../wordpress-develop": "WordPress/wordpress-develop#trunk"
+      }
+    }
+  }
+}

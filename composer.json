@@ -1,10 +1,10 @@
 {
-	"name": "figuren-theater/project_urlname",
-	"description": "... like the figuren.theater WordPress Multisite network.",
+    "name": "figuren-theater/project_urlname",
+    "description": "... like the figuren.theater WordPress Multisite network.",
     "homepage": "https://websites.fuer.figuren.theater",
     "type": "wordpress-muplugin",
     "keywords": ["wordpress", "wordpress-muplugin"],
-    "license": "GPL-3.0-or-later",
+    "license": "GPL-3.0+",
     "authors": [
         {
             "name": "figuren.theater",
@@ -22,17 +22,17 @@
         "issues": "https://github.com/figuren-theater/project_urlname/issues",
         "source": "https://github.com/figuren-theater/project_urlname"
     },
-	"autoload": {
-		"files": [
-			"inc/.../namespace.php",
-			"inc/namespace.php"
-		],
+    "autoload": {
+        "files": [
+            "inc/.../namespace.php",
+            "inc/namespace.php"
+        ],
         "classmap": [
             "inc/"
         ]
-	},
-	"repositories": [
-		{
+    },
+    "repositories": [
+        {
             "type": "git",
             "url": "https://github.com/figuren-theater/ft-options"
         },
@@ -40,24 +40,58 @@
             "type": "vcs",
             "url": "https://github.com/..."
         },
-		{
-			"type": "composer",
-			"url" : "https://wpackagist.org"
-		}
-	],
-	"require": {
+        {
+            "type": "composer",
+            "url" : "https://wpackagist.org"
+        }
+    ],
+    "require": {
         "php": ">=7.1",
         "figuren-theater/ft-options": "^1"
-	},
+    },
+    "require-dev": {
+        "automattic/vipwpcs": "^2.3",
+        "civicrm/composer-downloads-plugin": "^3.0",
+        "dealerdirect/phpcodesniffer-composer-installer": "0.7.2",
+        "php-stubs/wordpress-stubs": "^6.1.1",
+        "phpcompatibility/phpcompatibility-wp": "2.1.4",
+        "wp-cli/wp-cli": "^2.7",
+        "wp-coding-standards/wpcs": "2.3.0",
+        "yoast/wp-test-utils": "^0.2.2"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "civicrm/composer-downloads-plugin": true    
+        },
+        "platform": {
+            "php": "7.1"
+        },
+        "sort-packages": true
+    },
     "extra": {
         "altis": {
             "install-overrides": [
             ]
+        },
+        "downloads": {
+            "composer-normalize": {
+                "path": "vendor/bin/composer-normalize",
+                "type": "phar",
+                "url": "https://github.com/ergebnis/composer-normalize/releases/latest/download/composer-normalize.phar"
+            },
+            "phpstan": {
+                "path": "vendor/bin/phpstan",
+                "type": "phar",
+                "url": "https://github.com/phpstan/phpstan/releases/latest/download/phpstan.phar"
+            }
         }
     },
-	"config": {
-		"allow-plugins": {
-			"composer/installers": true
-		}
-	}
+    "scripts": {
+        "analyze": "if [ -z $TEST_SKIP_PHPSTAN ]; then phpstan --version; phpstan analyze --ansi --memory-limit=1G; fi",
+        "pre-commit": [
+            "npm run lint:staged"
+        ]
+    }
 }

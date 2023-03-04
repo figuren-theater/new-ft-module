@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests for Figuren_Theater Documentation module.
+ * Tests for project_name Documentation module.
  *
  * phpcs:disable WordPress.Files, WordPress.NamingConventions, PSR1.Classes.ClassDeclaration.MissingNamespace, HM.Functions.NamespacedFunctions
  */

@@ -4,16 +4,16 @@
  *
  * @package           figuren-theater/project_urlname
  * @author            figuren.theater
- * @copyright         2022 figuren.theater
+ * @copyright         2023 figuren.theater
  * @license           GPL-3.0+
  *
  * @wordpress-plugin
  * Plugin Name:       figuren.theater | project_name
  * Plugin URI:        https://github.com/figuren-theater/project_urlname
  * Description:       ... like the figuren.theater WordPress Multisite network.
- * Version:           1.0.0
+ * Version:           0.1.0-alpha
  * Requires at least: 6.0
- * Requires PHP:      7.2
+ * Requires PHP:      7.1
  * Author:            figuren.theater
  * Author URI:        https://figuren.theater
  * Text Domain:       figurentheater

@@ -36,19 +36,19 @@ This is the long desc
 ## Install
 
 1. Add this repository to your `composer.json`
-```json
-"repositories": [
-    {
-        "type": "git",
-        "url": "https://github.com/figuren-theater/project_urlname"
-    }
-]
-```
+    ```json
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/figuren-theater/project_urlname"
+        }
+    ]
+    ```
 
 2. Install via command line
-```sh
-composer require figuren-theater/project_urlname
-```
+    ```sh
+    composer require figuren-theater/project_urlname
+    ```
 
 ## Usage
 

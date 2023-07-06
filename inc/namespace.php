@@ -1,15 +1,13 @@
 <?php
 /**
- * Figuren_Theater QQQQQQQQ.
+ * Figuren_Theater project_name.
  *
- * @package figuren-theater/qqqqqqqqqqqqq
+ * @package figuren-theater/project_urlname
  */
 
-namespace Figuren_Theater\QQQQQQQQ;
+namespace Figuren_Theater\project_name;
 
 use Altis;
-use function Altis\register_module;
-
 
 /**
  * Register module.
@@ -17,16 +15,16 @@ use function Altis\register_module;
 function register() {
 
 	$default_settings = [
-		'enabled' => true, // needs to be set
+		'enabled' => true, // Needs to be set.
 	];
 	$options = [
 		'defaults' => $default_settings,
 	];
 
 	Altis\register_module(
-		'qqqqqqqqqqqqq',
+		'project_urlname',
 		DIRECTORY,
-		'QQQQQQQQ',
+		'project_name',
 		$options,
 		__NAMESPACE__ . '\\bootstrap'
 	);
@@ -37,9 +35,11 @@ function register() {
  */
 function bootstrap() {
 
-	// Plugins
-	//...\bootstrap();
-	
-	// Best practices
-	//...\bootstrap();
+	// Automatically load Plugins.
+	// phpcs:ignore
+	// ...\bootstrap();
+
+	// Load 'Best practices'.
+	// phpcs:ignore
+	// ...\bootstrap();
 }

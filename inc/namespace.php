@@ -12,7 +12,7 @@ use Altis;
 /**
  * Register module.
  */
-function register() {
+function register() :void {
 
 	$default_settings = [
 		'enabled' => true, // Needs to be set.
@@ -33,13 +33,17 @@ function register() {
 /**
  * Bootstrap module, when enabled.
  */
-function bootstrap() {
+function bootstrap() :void {
 
-	// Automatically load Plugins.
-	// phpcs:ignore
-	// ...\bootstrap();
+	/**
+	 * Automatically load Plugins.
+	 *
+	 * @example NameSpace\bootstrap();
+	 */
 
-	// Load 'Best practices'.
-	// phpcs:ignore
-	// ...\bootstrap();
+	/**
+	 * Load 'Best practices'.
+	 *
+	 * @example NameSpace\bootstrap();
+	 */
 }

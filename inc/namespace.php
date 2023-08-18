@@ -11,6 +11,8 @@ use Altis;
 
 /**
  * Register module.
+ *
+ * @return void
  */
 function register() :void {
 
@@ -32,6 +34,8 @@ function register() :void {
 
 /**
  * Bootstrap module, when enabled.
+ *
+ * @return void
  */
 function bootstrap() :void {
 

@@ -26,7 +26,7 @@
         "source": "https://github.com/figuren-theater/project_urlname"
     },
     "require-dev": {
-        "figuren-theater/code-quality": "^0"
+        "figuren-theater/code-quality": "*"
     },
     "repositories": [
         {

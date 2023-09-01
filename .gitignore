@@ -14,3 +14,8 @@
 # misc
 .DS_Store
 Thumbs.db
+
+# is created during composer install,
+# when package is tested
+# and not running within ft-platform
+/wp-content/

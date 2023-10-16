@@ -3,29 +3,9 @@
 	<description>Coding standards for project_urlname</description>
 
 	<file>.</file>
+	<arg name="basepath" value="./"/><!-- Strip the file paths down to the relevant bit -->
 
-	<!--
-	<exclude-pattern>*/bin/*</exclude-pattern>
-	<exclude-pattern>*/tests/*</exclude-pattern>
-	<exclude-pattern>*/vendor/*</exclude-pattern> -->
-
-	<!--
-	is created during composer install,
-	when package is tested
-	and not running within ft-platform
-	-->
-	<exclude-pattern>*/wp-content/*</exclude-pattern>
-
-	<!-- Use figuren.theater Coding Standards -->
+	<!-- Rules: figuren.theater Coding Standards -->
 	<rule ref="figurentheater" />
-
-	<!--
-	<rule ref="WordPress.WP.I18n">
-		<properties>
-			<property name="text_domain" type="array">
-				<element value="figurentheater"/>
-			</property>
-		</properties>
-	</rule> -->
 
 </ruleset>

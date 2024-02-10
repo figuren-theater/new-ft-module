@@ -5,6 +5,7 @@
     "type": "wordpress-muplugin",
     "keywords": [
         "wordpress",
+        "wordpress-plugin",
         "wordpress-muplugin"
     ],
     "authors": [
@@ -29,10 +30,6 @@
         "figuren-theater/code-quality": "*"
     },
     "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/figuren-theater/ft-options"
-        },
         {
             "type": "composer",
             "url": "https://wpackagist.org"

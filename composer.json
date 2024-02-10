@@ -5,6 +5,7 @@
     "type": "wordpress-muplugin",
     "keywords": [
         "wordpress",
+        "wordpress-plugin",
         "wordpress-muplugin"
     ],
     "authors": [

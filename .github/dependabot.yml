@@ -7,7 +7,7 @@ updates:
       interval: "weekly"
     # Increase the version requirements for Composer
     # only when required
-    versioning-strategy: increase-if-necessary
+    versioning-strategy: increase
     # All explicitly defined dependencies.
     allow:
       - dependency-type: "direct"
@@ -19,7 +19,7 @@ updates:
       interval: "weekly"
     # Increase the version requirements for Composer
     # only when required
-    versioning-strategy: increase-if-necessary
+    versioning-strategy: increase
     # All explicitly defined dependencies.
     allow:
       - dependency-type: "direct"

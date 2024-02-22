@@ -24,6 +24,10 @@ updates:
     allow:
       - dependency-type: "direct"
     open-pull-requests-limit: 10
+    groups:
+      wordpress-packages:
+        patterns:
+          - "@wordpress/*"
 
   - package-ecosystem: github-actions
     directory: "/"

@@ -1,0 +1,13 @@
+name: 'WordPress plugin checks'
+
+on:
+  workflow_call:
+  pull_request:
+  push:
+    branches:
+      ['main']
+
+jobs:
+  call-workflow-wp-plugin-checks:
+    uses: figuren-theater/code-quality/.github/workflows/wp-plugin-checks.yml@main
+    secrets: inherit
